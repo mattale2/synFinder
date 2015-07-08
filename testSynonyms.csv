@@ -1,0 +1,32 @@
+cloud,insects migration,cloud:1;swarm:1;overcast:0;obscure:0;befog:0;becloud:0;obnubilate:0;haze over:0;fog:0;mist:0;defile:0;sully:0;corrupt:0;taint:0;mottle:0;dapple:0
+cloud,meteorology,cloud:1;swarm:0;overcast:1;obscure:0;befog:0;becloud:1;obnubilate:0;haze over:0;fog:0;mist:0;defile:0;sully:0;corrupt:0;taint:0;mottle:0;dapple:0
+fly,outdoor,fly:1;tent-fly:1;rainfly:1;fly sheet:0;tent flap:1;fly front:0;fly ball:0;wing:0;aviate:0;pilot:0;fell:0;vanish:0;flee:0;take flight:0;vaporize:0
+fly,aviation,fly:1;tent-fly:0;rainfly:0;fly sheet:0;tent flap:0;fly front:0;fly ball:0;wing:1;aviate:1;pilot:1;fell:0;vanish:0;flee:0;take flight:1;vaporize:0
+strike,work rights,strike:1;work stoppage:1;rap:0;tap:0;ten-strike:0;hit:0;smash:0;smasher:0;bang:0;affect:0;impress:0;move:0;impinge on:0;run into:0;collide with:0;walk out:0;fall:0;shine:0;come to:0;fall upon:0;come upon:0;light upon:0;chance upon:0;come across:0;chance on:0;happen upon:0;attain:0;discover:0;scratch:0;expunge:0;excise:0;come to:0;assume:0;take:0;take up:0;mint:0;coin:0;strickle:0
+strike,sport,strike:1;work stoppage:0;rap:0;tap:0;ten-strike:1;hit:1;smash:0;smasher:0;bang:0;affect:0;impress:0;move:0;impinge on:0;run into:0;collide with:0;walk out:0;fall:0;shine:0;come to:1;fall upon:0;come upon:0;light upon:0;chance upon:0;come across:0;chance on:0;happen upon:0;attain:0;discover:0;scratch:0;expunge:0;excise:0;come to:1;assume:0;take:0;take up:0;mint:0;coin:0;strickle:0
+machine,motor vehicle,machine:1;simple machine:0;political machine:0;car:1;auto:1;automobile:1;motorcar:1
+instrument,music,instrument:1;tool:0;pawn:0;cat's-paw:0;legal document:0;legal instrument:0;official document:0;instrumental role:0;musical instrument:1;instrumentate:0
+instrument,law,instrument:1;tool:0;pawn:0;cat's-paw:0;legal document:1;legal instrument:1;official document:1;instrumental role:0;musical instrument:0;instrumentate:0
+term,architecture,term:1;condition:0;full term:0;terminus:1;terminal figure:1
+term,law,term:1;condition:1;full term:0;terminus:0;terminal figure:0
+tone,music,tone:1;tone of voice:1;timbre:1;timber:1;quality:1;spirit:0;feel:0;feeling:0;flavor:0;flavour:0;look:0;smell:0;shade:0;tint:0;tincture:0;note:1;musical note:1;pure tone:1;tonicity:0;tonus:0;whole tone:1;step:1;whole step:1;chant:1;intone:1;inflect:0;modulate:0;tone up:0;strengthen:0
+tone,art,tone:1;tone of voice:0;timbre:0;timber:0;quality:0;spirit:0;feel:0;feeling:0;flavor:0;flavour:0;look:0;smell:0;shade:1;tint:1;tincture:1;note:0;musical note:0;pure tone:0;tonicity:0;tonus:0;whole tone:0;step:0;whole step:0;chant:0;intone:0;inflect:0;modulate:0;tone up:0;strengthen:0
+string,cosmology,string:1;twine:0;bowed stringed instrument:0;train:0;drawstring:0;drawing string:0;cosmic string:1;chain:0;strand:0;thread:0;draw:0;string up:0;string along:0
+string,music,string:1;twine:0;bowed stringed instrument:1;train:0;drawstring:0;drawing string:0;cosmic string:0;chain:0;strand:0;thread:0;draw:0;string up:0;string along:0
+play,theatrical performance,play:1;drama:1;dramatic play:1;maneuver:0;manoeuvre:0;bid:0;child's play:0;playing period:1;period of play:1;free rein:0;shimmer:0;fun:0;sport:0;looseness:0;frolic:0;romp:0;gambol:0;caper:0;turn:0;gambling:0;gaming:0;swordplay:0;act:1;represent:1;spiel:0;act as:0;recreate:0;toy:0;run:0;fiddle:0;diddle:0;dally:0;trifle:0;flirt:0;roleplay:1;playact:1;bring:0;work:0;wreak:0;make for:0;bet:0;wager:0;meet:0;encounter:0;take on:0
+play,social science,play:1;drama:0;dramatic play:0;maneuver:0;manoeuvre:0;bid:0;child's play:0;playing period:0;period of play:0;free rein:0;shimmer:0;fun:1;sport:1;looseness:0;frolic:0;romp:0;gambol:0;caper:0;turn:0;gambling:0;gaming:0;swordplay:0;act:1;represent:0;spiel:0;act as:1;recreate:0;toy:1;run:0;fiddle:1;diddle:1;dally:1;trifle:1;flirt:1;roleplay:0;playact:0;bring:0;work:0;wreak:0;make for:0;bet:0;wager:0;meet:0;encounter:0;take on:0
+word,linguistics,word:1;news:0;intelligence:0;tidings:0;discussion:0;give-and-take:0;parole:0;word of honor:0;Son:0;Logos:0;password:0;watchword:0;countersign:0;Bible:0;Christian Bible:0;Book:0;Good Book:0;Holy Scripture:0;Holy Writ:0;Scripture:0;Word of God:0;give voice:0;formulate:1;phrase:1;articulate:1
+word,christianity,word:1;news:0;intelligence:0;tidings:0;discussion:0;give-and-take:0;parole:0;word of honor:0;Son:0;Logos:1;password:0;watchword:0;countersign:0;Bible:1;Christian Bible:1;Book:1;Good Book:1;Holy Scripture:1;Holy Writ:1;Scripture:1;Word of God:1;give voice:0;formulate:0;phrase:0;articulate:0
+word,social science,word:1;news:0;intelligence:0;tidings:0;discussion:1;give-and-take:1;parole:0;word of honor:1;Son:0;Logos:0;password:0;watchword:0;countersign:0;Bible:0;Christian Bible:0;Book:0;Good Book:0;Holy Scripture:0;Holy Writ:0;Scripture:0;Word of God:0;give voice:0;formulate:0;phrase:0;articulate:0
+sport,biology,sport:1;athletics:0;summercater:0;sportsman:0;sportswoman:0;mutant:1;mutation:1;variation:1;fun:0;play:0;feature:0;boast:0;frolic:0;lark:0;rollick:0;skylark:0;disport:0;cavort:0;gambol:0;frisk:0;romp:0;run around:0;lark about:0
+sport,psychology,sport:1;athletics:0;summercater:0;sportsman:0;sportswoman:0;mutant:0;mutation:0;variation:0;fun:1;play:1;feature:1;boast:1;frolic:0;lark:0;rollick:0;skylark:0;disport:0;cavort:0;gambol:0;frisk:0;romp:0;run around:0;lark about:0
+array,social science,array:1;raiment:0;regalia:0;range:0;lay out:0;set out:0;align:1
+array,clothing,array:1;raiment:1;regalia:1;range:0;lay out:0;set out:0;align:0
+tumor,medicine,tumor:1;tumour:1;neoplasm:1
+programming,economics,scheduling:1;programming:1;programing:1;computer programming:0;computer programing:0;program:0;programme:0
+programming,computer science,scheduling:0;programming:1;programing:1;computer programming:1;computer programing:1;program:1;programme:1
+plane,aviation,plane:1;airplane:1;aeroplane:1;sheet:0;planer:0;planing machine:0;carpenter's plane:0;woodworking plane:0;shave:0;skim:0;flat:0;level:0
+plane,woodwork,plane:1;airplane:0;aeroplane:0;sheet:0;planer:1;planing machine:1;carpenter's plane:1;woodworking plane:1;shave:1;skim:0;flat:0;level:0
+host,computer science,host:1;horde:0;legion:0;master of ceremonies:0;emcee:0;innkeeper:0;boniface:0;server:1
+server,computer science,server:1;waiter:0;host:1
+server,hospitality,server:1;waiter:1;host:0
