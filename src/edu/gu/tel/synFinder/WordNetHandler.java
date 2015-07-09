@@ -16,16 +16,18 @@ import edu.smu.tspell.wordnet.WordNetDatabase;
 public class WordNetHandler {
 
 	public WordNetHandler() {
-		//System.setProperty("wordnet.database.dir","C:\\Program Files (x86)\\WordNet\\2.1\\dict\\");
-		System.setProperty("wordnet.database.dir","/usr/local/WordNet-3.0/dict");	
+		System.setProperty("wordnet.database.dir","C:\\Program Files (x86)\\WordNet\\2.1\\dict\\");
+		//System.setProperty("wordnet.database.dir","/usr/local/WordNet-3.0/dict");	
 	}
 	private Synset[] retrieveWord(String wordForm){
 		WordNetDatabase database = null;
 		Synset[] synsets = new Synset[0];
 		database = WordNetDatabase.getFileInstance();
-		while(synsets.length == 0){
+		boolean databasePathOK=false;
+		while(!databasePathOK){
 			try{
 				synsets = database.getSynsets(wordForm);
+				databasePathOK=true;
 			}catch(Exception e){
 				String wordnetPath = JOptionPane.showInputDialog(null, "Please enter the right location of WordNet Database (e.g. C:\\WordNet\\2.1\\dict\\)", "Error in loading Wordnet Database", JOptionPane.ERROR_MESSAGE);
 				System.setProperty("wordnet.database.dir", wordnetPath.replace("\\", "\\\\"));
@@ -130,6 +132,11 @@ public class WordNetHandler {
     	word2synonyms.put(word, synonyms);
     	return word2synonyms;
     	//return this.retrieveSynonymsFromSynsets(synsets);
+    }
+    
+    public static void main(String[]ar){
+    	WordNetHandler wnh=new WordNetHandler();
+    	System.out.println(wnh.getStringSynonymsOfWord("operators"));
     }
 
 }
