@@ -55,9 +55,9 @@ public class SynonymsInDomainFinder {
 	private void initQueryHandlers() {
 		this.queryHandlers=new HashSet<QueryHandler>();
 		//this.queryHandlers.add(new QueryHandlerSlideshare());
-		//this.queryHandlers.add(new QueryHandlerGoogle());
+		this.queryHandlers.add(new QueryHandlerGoogle());
 		//this.queryHandlers.add(new QueryHandlerGoogleWiki());
-		this.queryHandlers.add(new QueryHandlerYahoo());
+		//this.queryHandlers.add(new QueryHandlerYahoo());
 		
 	}
 	private void initQueryHandlers(Set<String> searchEngines) {
