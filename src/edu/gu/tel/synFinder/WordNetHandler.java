@@ -14,11 +14,14 @@ import edu.smu.tspell.wordnet.SynsetType;
 import edu.smu.tspell.wordnet.WordNetDatabase;
 
 public class WordNetHandler {
+	
+	public static String wordNetLocation = "C:\\Program Files (x86)\\WordNet\\2.1\\dict\\";
 
 	public WordNetHandler() {
-		System.setProperty("wordnet.database.dir","C:\\Program Files (x86)\\WordNet\\2.1\\dict\\");
-		//System.setProperty("wordnet.database.dir","/usr/local/WordNet-3.0/dict");	
+		//System.setProperty("wordnet.database.dir","C:\\Program Files (x86)\\WordNet\\2.1\\dict\\");
+		System.setProperty("wordnet.database.dir","/usr/local/WordNet-3.0/dict");	
 		//System.setProperty("wordnet.database.dir", "/Users/am/WordNet/dict");
+		System.setProperty("wordnet.database.dir", wordNetLocation);
 	}
 	private Synset[] retrieveWord(String wordForm){
 		WordNetDatabase database = null;
