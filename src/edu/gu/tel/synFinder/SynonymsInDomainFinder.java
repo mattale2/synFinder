@@ -94,6 +94,7 @@ public class SynonymsInDomainFinder {
 	}
 	private void buildDictionaryBasedOnTermAndDomain(String term, String domain){
 		String query = term+" "+domain;
+		//System.out.println("QUERY "+query);
 		domain=Utils.cleanStringFromSpecialChars(domain);
 		term=Utils.cleanStringFromSpecialChars(term);
 		
@@ -125,7 +126,10 @@ public class SynonymsInDomainFinder {
 	public Set<String> retrieveSynonymsInDomain(String term, String domain){
 		this.buildDictionaryBasedOnTermAndDomain(term, domain);
 		
-		return this.convertToString(this.retrieveRelevantSynonymsOf(term, domain).keySet());
+		Map<Synonym, Double> synonyms = this.retrieveRelevantSynonymsOf(term, domain);
+		if(synonyms==null)
+			return null;
+		return this.convertToString(synonyms.keySet());
 	}
 	
 	public Set<String> retrieveSynonymsInDomain(String term){	
@@ -168,7 +172,7 @@ public class SynonymsInDomainFinder {
 	}
 	public Map<Synonym,Double> retrieveRelevantSynonymsInOneCategory(String term, String domain) throws Exception{
 		this.buildDictionaryBasedOnTermAndDomain(term, domain);
-		System.out.println(this.terms2syn2weight);
+	//	System.out.println(this.terms2syn2weight);
 		Map<Synonym,Double> relevantSynonyms = new HashMap<Synonym, Double>();
 		Map<Synonym,Double> synonyms2weight=this.terms2syn2weight.get(term);
 		if(synonyms2weight == null){
@@ -210,6 +214,8 @@ public class SynonymsInDomainFinder {
 			this.improveLocalDictionary(term, domain);
 			synonyms2weight=this.terms2syn2weight.get(term);
 		}
+		if(synonyms2weight==null)
+			return null;
 		for(Synonym s : synonyms2weight.keySet()){
 			Double w=synonyms2weight.get(s);
 			if(w>0)
