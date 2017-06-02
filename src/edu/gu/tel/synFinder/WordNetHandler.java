@@ -12,6 +12,7 @@ import javax.swing.JOptionPane;
 import edu.smu.tspell.wordnet.Synset;
 import edu.smu.tspell.wordnet.SynsetType;
 import edu.smu.tspell.wordnet.WordNetDatabase;
+import edu.smu.tspell.wordnet.impl.file.RetrievalException;
 
 public class WordNetHandler {
 	
@@ -34,9 +35,13 @@ public class WordNetHandler {
 			try{
 				synsets = database.getSynsets(wordForm);
 				databasePathOK=true;
-			}catch(Exception e){
+			}
+			catch (RetrievalException e) {
 				String wordnetPath = JOptionPane.showInputDialog(null, "Please enter the right location of WordNet Database (e.g. C:\\WordNet\\2.1\\dict\\)", "Error in loading Wordnet Database", JOptionPane.ERROR_MESSAGE);
 				System.setProperty("wordnet.database.dir", wordnetPath.replace("\\", "\\\\"));
+			}catch(Exception e){
+				System.out.println("ERROR in retrieving synsets of \""+wordForm+"\": "+e.getMessage());
+				e.printStackTrace();
 			}
 		}
 		return synsets;
